@@ -1,3 +1,38 @@
-.index-title {
-  font-size: 100px;
+.banner{
+  background-image: url(../images/hero-bg.png);
+  background-position: -500px center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  padding-top: 112px;
+}
+
+.index-search{
+  width: 351px;
+  border-radius: 16px;
+}
+
+.start-btn{
+  transform: translate(163%, -115%);
+  border-radius: 12px;
+}
+
+@media (min-width:577px)
+{
+  .banner{
+    background-position: -300px center;
+  }
+}
+
+@media (min-width:768px)
+{
+  .banner{
+    background-position: -150px center;
+  }
+}
+
+@media (min-width:890px){
+  .banner{
+    background-position: center center;
+  }
 }

@@ -1,58 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="zh-TW">
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
-    <script type="module" crossorigin src="/eighth/assets/main-BRcWFxRv.js"></script>
-    <link rel="stylesheet" crossorigin href="/eighth/assets/main-B1Sry5yV.css">
-  </head>
+    
+    <title>ZOBAA</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script type="module" crossorigin src="/eighth/assets/index-S_TldDOF.js"></script>
+  <link rel="stylesheet" crossorigin href="/eighth/assets/index-Luz07Hc9.css">
+</head>
+
   <body>
-    <nav class="navbar navbar-light bg-light fixed-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Offcanvas navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
+    <nav class="navbar navbar-light bg-white py-4 py-lg-5 fixed-top">
+    <div class="container position-relative">
+        <div class="d-flex align-items-center me-auto">
+            <a class="navbar-brand p-0 me-7" href="index">
+                <img src="data:image/png;base64,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" alt="logo">
             </a>
-            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
+            <!-- lg搜尋列 -->
+            <form class="position-relative d-none d-lg-block">
+                <span class="material-icons-outlined align-bottom position-absolute top-50 start-0 translate-middle ps-10 text-neutral-60">search</span>
+                <input type="search" 
+                class="form-control rounded-1 py-2 ps-10 search-lg" 
+                id="search-lg" 
+                placeholder="搜尋景點、地點或城市">
+            </form>
+            <!-- lg搜尋列end -->
+        </div>
+        <!-- 手機板搜尋欄+關閉按鈕(因為按鈕lg不顯示，此搜尋欄也無法被打開) -->
+        <div class="position-absolute z-1 bg-white start-0 end-0 px-4">
+            <div class="collapse" id="collapseExample">
+                <div class="d-flex align-items-center">
+                    <form class="position-relative w-100">
+                        <span class="material-icons-outlined align-bottom position-absolute top-50 start-0 translate-middle ps-10 text-neutral-60">search</span>
+                        <input type="search" 
+                        class="form-control rounded-1 py-2 ps-10" 
+                        id="search1" 
+                        placeholder="搜尋景點、地點或城市">
+                    </form>
+                    <button type="button" class="btn p-2 border-0">
+                        <span class="material-icons-outlined align-bottom" 
+                            data-bs-toggle="collapse" 
+                            data-bs-target="#collapseExample">
+                            close
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- 手機板搜尋欄end -->
+        <!-- 手機板選單搜尋按鈕 -->
+        <button type="button" 
+        class="btn p-2 border-0 d-lg-none" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#collapseExample">
+            <span class="material-icons-outlined align-bottom">search</span>
+        </button>
+        <!-- 手機板選單搜尋按鈕end -->
+        <!-- 購物車按鈕 -->
+        <a class="btn border-0 py-2" href="#">
+            <span class="position-relative">
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-alert p-0 cart-tag">
+                    2
+                    <span class="visually-hidden">unread messages</span>
+                </span>
+                <span class="material-icons-outlined align-bottom">shopping_cart</span>
+            </span>
+        </a>
+        <!-- 購物車按鈕end -->
+        <!-- 手機板漢堡選單及內容(尚未製作) -->
+        <button class="btn border-0 p-2 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="material-icons-outlined align-bottom">menu</span>
+        </button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+        <!-- 手機板漢堡選單end -->
+        <!-- lg會員圖示 -->
+        <a class="ms-5 d-lg-flex align-items-center d-none" href="#">
+            <img class="profile-img" src="/eighth/assets/avatar-1-cp2HwrEX.png" alt="profile">
+            <p class="fz-5 fw-bold text-primary-100 ms-2">Jessica</p>
+        </a>
+        <!-- lg會員圖示end -->
     </div>
-  </div>
 </nav>
-    <h1 class="index-title">我是首頁</h1>
-    <img src="/eighth/assets/dog-C9XCfHyE.jpg" style="width: 300px;" alt="cat">
+    <main>
+      <section class="banner px-4">
+        <div class="container p-0">
+          <h2 class="fs-5 fw-bold text-primary-100 bg-primary-10 rounded-1 p-2 d-inline-block mb-4">
+            ZOBAA 旅行推薦平台
+          </h2>
+          <h1 class="fs-2 fw-bold text-primary mb-2">
+            <span class="d-block d-lg-inline">用旅行，</span>
+            <span>收藏世界的樣子</span>
+          </h1>
+          <p class="fs-6 text-primary-80 fw-bold mb-7">ZOBAA 整合熱門景點推薦、即時優惠、獨家行程，從比價到訂購，一次完成你的完美出遊計畫。</p>
+          <form class="position-relative">
+            <span class="material-icons-outlined align-bottom position-absolute text-neutral-60 ps-10" style="transform: translate(-45%, 85%);">search</span>
+            <input type="search" 
+            class="form-control py-6 ps-10 index-search" 
+            id="index-search" 
+            placeholder="搜尋景點、地點或城市">
+            <button type="button" class="btn btn-primary py-4 px-5 position-absolute start-btn">
+              開始探索旅程
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
 
     <footer class="footer">footer</footer>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
   </body>
 </html>

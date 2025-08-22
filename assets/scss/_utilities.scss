@@ -1,0 +1,17 @@
+$utilities: map-merge(
+  $utilities,
+  (
+    "font-size":
+      map-merge(
+        map-get($utilities, "font-size"),
+        (
+          responsive: true,
+        )
+      ),
+  )
+);
+
+
+.btn-natural-10:hover{
+  background-color: $natural-30;
+}

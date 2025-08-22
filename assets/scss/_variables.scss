@@ -376,6 +376,7 @@ $theme-colors: (
   "info-20":      $info-20,
   "info-10":      $info-10,
   
+  "alert":     $alert,
   "alert-120": $alert-120,
   "alert-100": $alert-100,
   "alert-20": $alert-20,
@@ -553,7 +554,8 @@ $icon-link-icon-transform:    translate3d(.25em, 0, 0) !default;
 //
 // Style p element.
 
-$paragraph-margin-bottom:   1rem !default;
+// $paragraph-margin-bottom:   1rem !default;
+$paragraph-margin-bottom:   0 !default;
 
 
 // Grid breakpoints

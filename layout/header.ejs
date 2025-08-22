@@ -1,46 +1,104 @@
-<nav class="navbar navbar-light bg-white py-4 fixed-top">
-  <div class="container">
-    <a class="navbar-brand" href="index">
-        <img src="../assets/images/# ZOBAA.png" alt="logo">
-    </a>
-    <button type="button" class="btn">
-        <span class="material-icons-outlined">search</span>
-    </button>
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
+<nav class="navbar navbar-light bg-white py-4 py-lg-5 fixed-top">
+    <div class="container position-relative">
+        <div class="d-flex align-items-center me-auto">
+            <a class="navbar-brand p-0 me-7" href="index">
+                <img src="../assets/images/LOGO.png" alt="logo">
             </a>
-            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
+            <!-- lg搜尋列 -->
+            <form class="position-relative d-none d-lg-block">
+                <span class="material-icons-outlined align-bottom position-absolute top-50 start-0 translate-middle ps-10 text-neutral-60">search</span>
+                <input type="search" 
+                class="form-control rounded-1 py-2 ps-10 search-lg" 
+                id="search-lg" 
+                placeholder="搜尋景點、地點或城市">
+            </form>
+            <!-- lg搜尋列end -->
+        </div>
+        <!-- 手機板搜尋欄+關閉按鈕(因為按鈕lg不顯示，此搜尋欄也無法被打開) -->
+        <div class="position-absolute z-1 bg-white start-0 end-0 px-4">
+            <div class="collapse" id="collapseExample">
+                <div class="d-flex align-items-center">
+                    <form class="position-relative w-100">
+                        <span class="material-icons-outlined align-bottom position-absolute top-50 start-0 translate-middle ps-10 text-neutral-60">search</span>
+                        <input type="search" 
+                        class="form-control rounded-1 py-2 ps-10" 
+                        id="search1" 
+                        placeholder="搜尋景點、地點或城市">
+                    </form>
+                    <button type="button" class="btn p-2 border-0">
+                        <span class="material-icons-outlined align-bottom" 
+                            data-bs-toggle="collapse" 
+                            data-bs-target="#collapseExample">
+                            close
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- 手機板搜尋欄end -->
+        <!-- 手機板選單搜尋按鈕 -->
+        <button type="button" 
+        class="btn p-2 border-0 d-lg-none" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#collapseExample">
+            <span class="material-icons-outlined align-bottom">search</span>
+        </button>
+        <!-- 手機板選單搜尋按鈕end -->
+        <!-- 購物車按鈕 -->
+        <a class="btn border-0 py-2" href="#">
+            <span class="position-relative">
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-alert p-0 cart-tag">
+                    2
+                    <span class="visually-hidden">unread messages</span>
+                </span>
+                <span class="material-icons-outlined align-bottom">shopping_cart</span>
+            </span>
+        </a>
+        <!-- 購物車按鈕end -->
+        <!-- 手機板漢堡選單及內容(尚未製作) -->
+        <button class="btn border-0 p-2 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="material-icons-outlined align-bottom">menu</span>
+        </button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+        <!-- 手機板漢堡選單end -->
+        <!-- lg會員圖示 -->
+        <a class="ms-5 d-lg-flex align-items-center d-none" href="#">
+            <img class="profile-img" src="../assets/images/avatar-1.png" alt="profile">
+            <p class="fz-5 fw-bold text-primary-100 ms-2">Jessica</p>
+        </a>
+        <!-- lg會員圖示end -->
     </div>
-  </div>
 </nav>

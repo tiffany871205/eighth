@@ -5,16 +5,29 @@
   background-repeat: no-repeat;
   min-height: 100vh;
   padding-top: 112px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .index-search{
-  width: 351px;
+  max-width: 351px;
   border-radius: 16px;
 }
 
+.start-ntn-flex{
+  max-width: 351px;
+}
+
 .start-btn{
-  transform: translate(163%, -115%);
+  transform: translate(-5%, -115%);
   border-radius: 12px;
+}
+
+.recommend{
+  background-color:#221F1E;
+  .card{
+    width: 227px;
+  }
 }
 
 @media (min-width:577px)
@@ -35,4 +48,57 @@
   .banner{
     background-position: center center;
   }
+}
+
+@media (min-width:992px){
+.banner{
+  padding-top: 285px;
+}
+
+.index-search{
+  max-width: 720px;
+}
+
+.start-btn{
+transform: translate(-10%, -115%);
+}
+
+.start-ntn-flex{
+  max-width: 720px;
+}
+
+.recommend .card{
+  width: 25%;
+  max-width: 416px;
+  height: 600px;
+  transition: width 0.5s;
+
+  button{
+    display: none;
+    transition: display 0.5s;
+  }
+
+  img{
+    object-fit: cover;
+  }
+
+  &:hover{
+    width: 100%;
+    button{
+      display: block;
+    }
+  }
+}
+
+.offset-row{
+  transform: translateX(80px)
+}
+
+.intro{
+  background-image: url(../images/deco-bg.svg);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 }

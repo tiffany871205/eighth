@@ -1,0 +1,399 @@
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Osaka</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+
+    <main>
+        <!-- section1 -->
+        <section class="pt-12">
+            <div class="container">
+                <nav aria-label="breadcrumb mb-lg-10">
+                    <ol class="breadcrumb d-none d-lg-flex">
+                        <li class="breadcrumb-item"><a href="#">首頁</a></li>
+                        <li class="breadcrumb-item"><a href="#">日本</a></li>
+                        <li class="breadcrumb-item"><a href="#">關西</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">大阪</li>
+                    </ol>
+                </nav>
+
+                <div>
+                    <h1 class="fs-2 fw-bold text-black mb">大阪</h1>
+                    <p class="fs-6 text-netural-80 mb-7">大阪，一座融合傳統與現代的城市，擁有豐富的歷史文化、熱鬧的購物街區與世界知名的美食天堂。從氣派的大阪城到霓虹閃爍的道頓堀，每一處都充滿驚喜。無論是第一次造訪，還是再次回味，大阪總能用它的熱情與魅力，讓你留下難忘回憶。</p>
+                </div>
+
+                <div id="carouselExampleControls" class="carousel slide mb-10 d-block d-lg-none position-relative" data-bs-ride="carousel">
+
+                    <button type="button" class="btn btn-neutral-0 z-1 rounded-3 border-primary py-5 px-9 position-absolute end-0 bottom-0 text-primary fw-bold">
+                    查看更多
+                    </button>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item  active">
+                            <img src="../assets/images/osaka-1.png" class="d-block w-100" alt="osaka1">
+                        </div>
+                        <div class="carousel-item ">
+                        <img src="../assets/images/osaka-2.png" class="d-block w-100" alt="osaka2">
+                        </div>
+                        <div class="carousel-item ">
+                        <img src="../assets/images/osaka-3.png" class="d-block w-100" alt="osaka3">
+                        </div>
+                        <div class="carousel-item ">
+                        <img src="../assets/images/osaka-4.png" class="d-block w-100" alt="osaka4">
+                        </div>
+                        <div class="carousel-item ">
+                        <img src="../assets/images/osaka-5.png" class="d-block w-100" alt="osaka5">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button"     data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button"                 data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- section2 -->
+        <section class="pt-10 pb-10">
+            <div class="container">
+                <h2 class="fs-2 fw-bold text-primary mb-6">想怎麼玩大阪？<br>熱門分類快速選！</h2>
+                <div class="row">
+                    <div class="category container">
+                        <div class="category-wrap col-12 d-flex flex-wrap">
+                            <div class="category-card col-6 col-lg-3">
+                                <div class="card rounded-16">
+                                    <div class="bg-primary-10 d-flex align-items-center justify-content-center card-rounded-16">
+                                        <img src="../assets/images/category-1.svg" alt="car">
+                                    </div>
+                                    <div class="card-body p-5">
+                                    <h3 class="fs-5 fw-bold text-netural-100 mb-2">交通優惠</h3>
+                                    <p class="fs-6 text-netural-80">20+ 種選擇</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category-card col-6 col-lg-3">
+                                <div class="card rounded-16">
+                                    <div class="bg-primary-10 d-flex align-items-center justify-content-center card-rounded-16">
+                                        <img src="../assets/images/category-2.svg" alt="oneday">
+                                    </div>
+                                    <div class="card-body p-5">
+                                    <h3 class="fs-5 fw-bold text-netural-100 mb-2">一日遊</h3>
+                                    <p class="fs-6 text-netural-80">50+ 種選擇</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category-card col-6 col-lg-3">
+                                <div class="card rounded-16">
+                                    <div class="bg-primary-10 d-flex align-items-center justify-content-center card-rounded-16">
+                                        <img src="../assets/images/category-3.svg" alt="site">
+                                    </div>
+                                    <div class="card-body p-5">
+                                    <h3 class="fs-5 fw-bold text-netural-100 mb-2">景點門票</h3>
+                                    <p class="fs-6 text-netural-80">70+ 種選擇</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category-card col-6 col-lg-3">
+                                <div class="card rounded-16">
+                                    <div class="bg-primary-10 d-flex align-items-center justify-content-center card-rounded-16">
+                                        <img src="../assets/images/category-4.svg" alt="car">
+                                    </div>
+                                    <div class="card-body p-5">
+                                    <h3 class="fs-5 fw-bold text-netural-100 mb-2">美食餐廳</h3>
+                                    <p class="fs-6 text-netural-80">80+ 種選擇</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- section3 -->
+        <section class="py-10 top-site">
+            <div class="container">
+                <h2 class="fs-2 fw-bold text-primary mb-6">大阪 TOP 10!</h2>
+                <div class="container">
+            <div class="d-flex gap-7 overflow-x-auto">
+                <div class="card flex-shrink-0 mb-10 border-0 position-relative">
+                <span class="material-icons-outlined align-bottom text-neutral-0 position-absolute top-0 end-0 me-2 mt-2">favorite_border</span>
+                <img src="../assets/images/top-1.png" class="card-img-top rounded-16" alt="top-1">
+                <div class="card-body">
+                    <h3 class="fw-bold mb-2 fs-5">環球影城超值一日遊｜哈利波特園區＋快速通關體驗</h3>
+                <div class="mb-2">
+                    <button class="fs-6 btn py-1 px-2 btn-primary-10 text-primary">即買即用</button>
+                    <button class="fs-6 btn py-1 px-2 btn-primary-10 text-primary ms-2">5 天前可免費取消</button>
+                </div>
+                    <p class="fs-6 pb-5 border-bottom border-netural-40 mb-5">
+                    <span class="material-icons-outlined align-bottom secondary-yellow">star</span>
+                    <span class="text-netural-80 ms-1">4.8</span>
+                    <span class="text-neutral-60 ms-1 pe-4 border-end border-netural-40">(1029)</span>
+                    <span class="text-netural-80 ps-4">1000+ 個已訂購</span>
+                    </p>
+                    <h5 class="fs-4 fw-bold text-primary mb-0">NT$ 5,480</h5>
+                    <p class="text-decoration-line-through fs-6 line-through-color">NT$ 6,200</p>
+                </div>
+                </div>
+                <div class="card flex-shrink-0 mb-10 border-0 position-relative">
+                <span class="material-icons-outlined align-bottom text-neutral-0 position-absolute top-0 end-0 me-2 mt-2">favorite_border</span>
+                <img src="../assets/images/top-2.png" class="card-img-top rounded-16" alt="train">
+                <div class="card-body">
+                    <h3 class="fw-bold mb-2 fs-5">奈良梅花鹿餵食體驗＋和服散策｜日式風情輕旅行</h3>
+                <div class="mb-2">
+                    <button class="fs-6 btn py-1 px-2 btn-primary-10 text-primary">中文導覽</button>
+                    <button class="fs-6 btn py-1 px-2 btn-primary-10 text-primary ms-2">5 天前可免費取消</button>
+                </div>
+                    <p class="fs-6 pb-5 border-bottom border-netural-40 mb-5">
+                    <span class="material-icons-outlined align-bottom secondary-yellow">star</span>
+                    <span class="text-netural-80 ms-1">4.7</span>
+                    <span class="text-neutral-60 ms-1 pe-4 border-end border-netural-40">(800)</span>
+                    <span class="text-netural-80 ps-4">900+ 個已訂購</span>
+                    </p>
+                    <h5 class="fs-4 fw-bold text-primary mb-0">NT$ 2,250</h5>
+                    <p class="text-decoration-line-through fs-6 line-through-color">NT$ 2,800</p>
+                </div>
+                </div>
+                <div class="card flex-shrink-0 mb-10 border-0 position-relative">
+                <span class="material-icons-outlined align-bottom text-neutral-0 position-absolute top-0 end-0 me-2 mt-2">favorite_border</span>
+                <img src="../assets/images/top-3.png" class="card-img-top rounded-16" alt="train">
+                <div class="card-body">
+                    <h3 class="fw-bold mb-2 fs-5">黑門市場美食巡禮｜在地職人帶路吃遍大阪經典小吃</h3>
+                <div class="mb-2">
+                    <button class="fs-6 btn py-1 px-2 btn-primary-10 text-primary">專業導覽</button>
+                    <button class="fs-6 btn py-1 px-2 btn-primary-10 text-primary ms-2">5 天前可免費取消</button>
+                </div>
+                    <p class="fs-6 pb-5 border-bottom border-netural-40 mb-5">
+                    <span class="material-icons-outlined align-bottom secondary-yellow">star</span>
+                    <span class="text-netural-80 ms-1">4.6</span>
+                    <span class="text-neutral-60 ms-1 pe-4 border-end border-netural-40">(540)</span>
+                    <span class="text-netural-80 ps-4">700+ 個已訂購</span>
+                    </p>
+                    <h5 class="fs-4 fw-bold text-primary mb-0">NT$ 1,580</h5>
+                    <p class="text-decoration-line-through fs-6 line-through-color">NT$ 2,500</p>
+                </div>
+                </div>
+                <div class="card flex-shrink-0 mb-10 border-0 position-relative">
+                <span class="material-icons-outlined align-bottom text-neutral-0 position-absolute top-0 end-0 me-2 mt-2">favorite_border</span>
+                <img src="../assets/images/journey-1.png" class="card-img-top rounded-16" alt="train">
+                <div class="card-body">
+                <h3 class="fw-bold mb-2 fs-5">【獨家優惠】布萊頓彩色小屋＋森林蒸汽火車一日遊</h3>
+                <div class="mb-2">
+                    <button class="fs-6 btn py-1 px-2 btn-primary-10 text-primary">即買即用</button>
+                    <button class="fs-6 btn py-1 px-2 btn-primary-10 text-primary ms-2">7 天前可免費取消</button>
+                </div>
+                    <p class="fs-6 pb-5 border-bottom border-netural-40 mb-5">
+                    <span class="material-icons-outlined align-bottom secondary-yellow">star</span>
+                    <span class="text-netural-80 ms-1">4.4</span>
+                    <span class="text-neutral-60 ms-1 pe-4 border-end border-netural-40">(319)</span>
+                    <span class="text-netural-80 ps-4">600+ 個已訂購</span>
+                </p>
+                <h5 class="fs-4 fw-bold text-primary mb-0">NT$ 6,890</h5>
+                <p class="text-decoration-line-through fs-6 line-through-color">NT$ 8,890</p>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- section4 -->
+        <section class="top-site pt-lg-10 pb-lg-11 pb-3">
+            <div class="container">
+                <h2 class="fs-2 fw-bold text-primary mb-6">來自 ZOBAA 的<br>大阪推薦</h2>
+                
+                <div class="container mb-6">
+                    <ul class="d-flex flex-nowrap gap-9 ps-0 border-bottom border-netural-10 overflow-x-auto">
+                        <li class="nav-item">
+                        <a class="nav-rec active text-primary flex-shrink-0 border-bottom border-primary border-3" aria-current="page" href="#">觀光行程</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-rec flex-shrink-0" href="#">景點門票</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-rec flex-shrink-0" href="#">交通優惠</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-rec flex-shrink-0" href="#">美食餐廳</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-rec flex-shrink-0" href="#">本月優惠</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container">
+            <div class="d-flex gap-7 overflow-x-auto">
+                <div class="card flex-shrink-0 mb-10 border-0 position-relative">
+                <span class="material-icons-outlined align-bottom text-neutral-0 position-absolute top-0 end-0 me-2 mt-2">favorite_border</span>
+                <img src="../assets/images/top-1.png" class="card-img-top rounded-16" alt="top-1">
+                <div class="card-body">
+                    <h3 class="fw-bold mb-2 fs-5">環球影城超值一日遊｜哈利波特園區＋快速通關體驗</h3>
+                <div class="mb-2">
+                    <button class="fs-6 btn py-1 px-2 btn-primary-10 text-primary">即買即用</button>
+                    <button class="fs-6 btn py-1 px-2 btn-primary-10 text-primary ms-2">5 天前可免費取消</button>
+                </div>
+                    <p class="fs-6 pb-5 border-bottom border-netural-40 mb-5">
+                    <span class="material-icons-outlined align-bottom secondary-yellow">star</span>
+                    <span class="text-netural-80 ms-1">4.8</span>
+                    <span class="text-neutral-60 ms-1 pe-4 border-end border-netural-40">(1029)</span>
+                    <span class="text-netural-80 ps-4">1000+ 個已訂購</span>
+                    </p>
+                    <h5 class="fs-4 fw-bold text-primary mb-0">NT$ 5,480</h5>
+                    <p class="text-decoration-line-through fs-6 line-through-color">NT$ 6,200</p>
+                </div>
+                </div>
+                <div class="card flex-shrink-0 mb-10 border-0 position-relative">
+                <span class="material-icons-outlined align-bottom text-neutral-0 position-absolute top-0 end-0 me-2 mt-2">favorite_border</span>
+                <img src="../assets/images/top-2.png" class="card-img-top rounded-16" alt="train">
+                <div class="card-body">
+                    <h3 class="fw-bold mb-2 fs-5">奈良梅花鹿餵食體驗＋和服散策｜日式風情輕旅行</h3>
+                <div class="mb-2">
+                    <button class="fs-6 btn py-1 px-2 btn-primary-10 text-primary">中文導覽</button>
+                    <button class="fs-6 btn py-1 px-2 btn-primary-10 text-primary ms-2">5 天前可免費取消</button>
+                </div>
+                    <p class="fs-6 pb-5 border-bottom border-netural-40 mb-5">
+                    <span class="material-icons-outlined align-bottom secondary-yellow">star</span>
+                    <span class="text-netural-80 ms-1">4.7</span>
+                    <span class="text-neutral-60 ms-1 pe-4 border-end border-netural-40">(800)</span>
+                    <span class="text-netural-80 ps-4">900+ 個已訂購</span>
+                    </p>
+                    <h5 class="fs-4 fw-bold text-primary mb-0">NT$ 2,250</h5>
+                    <p class="text-decoration-line-through fs-6 line-through-color">NT$ 2,800</p>
+                </div>
+                </div>
+                <div class="card flex-shrink-0 mb-10 border-0 position-relative">
+                <span class="material-icons-outlined align-bottom text-neutral-0 position-absolute top-0 end-0 me-2 mt-2">favorite_border</span>
+                <img src="../assets/images/top-3.png" class="card-img-top rounded-16" alt="train">
+                <div class="card-body">
+                    <h3 class="fw-bold mb-2 fs-5">黑門市場美食巡禮｜在地職人帶路吃遍大阪經典小吃</h3>
+                <div class="mb-2">
+                    <button class="fs-6 btn py-1 px-2 btn-primary-10 text-primary">專業導覽</button>
+                    <button class="fs-6 btn py-1 px-2 btn-primary-10 text-primary ms-2">5 天前可免費取消</button>
+                </div>
+                    <p class="fs-6 pb-5 border-bottom border-netural-40 mb-5">
+                    <span class="material-icons-outlined align-bottom secondary-yellow">star</span>
+                    <span class="text-netural-80 ms-1">4.6</span>
+                    <span class="text-neutral-60 ms-1 pe-4 border-end border-netural-40">(540)</span>
+                    <span class="text-netural-80 ps-4">700+ 個已訂購</span>
+                    </p>
+                    <h5 class="fs-4 fw-bold text-primary mb-0">NT$ 1,580</h5>
+                    <p class="text-decoration-line-through fs-6 line-through-color">NT$ 2,500</p>
+                </div>
+                </div>
+                <div class="card flex-shrink-0 mb-10 border-0 position-relative">
+                <span class="material-icons-outlined align-bottom text-neutral-0 position-absolute top-0 end-0 me-2 mt-2">favorite_border</span>
+                <img src="../assets/images/journey-1.png" class="card-img-top rounded-16" alt="train">
+                <div class="card-body">
+                <h3 class="fw-bold mb-2 fs-5">【獨家優惠】布萊頓彩色小屋＋森林蒸汽火車一日遊</h3>
+                <div class="mb-2">
+                    <button class="fs-6 btn py-1 px-2 btn-primary-10 text-primary">即買即用</button>
+                    <button class="fs-6 btn py-1 px-2 btn-primary-10 text-primary ms-2">7 天前可免費取消</button>
+                </div>
+                    <p class="fs-6 pb-5 border-bottom border-netural-40 mb-5">
+                    <span class="material-icons-outlined align-bottom secondary-yellow">star</span>
+                    <span class="text-netural-80 ms-1">4.4</span>
+                    <span class="text-neutral-60 ms-1 pe-4 border-end border-netural-40">(319)</span>
+                    <span class="text-netural-80 ps-4">600+ 個已訂購</span>
+                </p>
+                <h5 class="fs-4 fw-bold text-primary mb-0">NT$ 6,890</h5>
+                <p class="text-decoration-line-through fs-6 line-through-color">NT$ 8,890</p>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- section5 -->
+        <section class="py-10 bg-primary-10 py-lg-12">
+            <div class="container">
+                <div class="mb-6 d-lg-flex justify-content-between align-items-center mb-lg-11">
+                    <h2 class="fs-9 fw-bold mb-2 text-primary">旅人攻略<br>看看大家怎麼玩！</h2>
+                    <p class="fs-5 fw-bold text-primary">這裡不只是遊記，更是來自旅人親身經歷的風格指南與靈感筆記。<br>跟著他們的腳步走，找到屬於你的旅行意義。</p>
+                </div>
+            </div>
+            <section class="play px-4">
+                <div class="container">
+                    <div class="card rounded-16 p-5 w-100 border-0">
+                        <div class="d-lg-flex">
+                        <img class="rounded-16" src="../assets/images/guide-1.png" alt="japan">
+                        <div class="card-body ms-lg-9">
+                            <div class="d-flex gap-2 my-2">
+                            <button class="btn btn-primary-10 text-primary fs-6 fw-bold px-5 py-2">#大阪</button>
+                            <button class="btn btn-primary-10 text-primary fs-6 fw-bold px-5 py-2">#老街巡禮</button>
+                            </div>
+                            <h3 class="fs-3 fw-bold mb-2 mt-7">空堀商店街的散步節奏</h3>
+                            <p class="fs-6 text-netural-80 mb-10">離開熱鬧難波，走進空堀這座時間凍結的老街，每家店都像一段回憶：木造喫茶、手工小物、安靜的巷弄轉角。這裡沒有觀光氣氛，只有城市最真實的日常樣貌</p>
+                            <a class="text-primary fw-bold fs-5" href="#">查看文章<span class="material-icons-outlined align-bottom">arrow_forward</span></a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card rounded-16 p-5 w-100 border-0 mt-7">
+                        <div class="d-lg-flex">
+                        <img class="rounded-16" src="../assets/images/guide-2.png" alt="japan">
+                        <div class="card-body ms-lg-9">
+                            <div class="d-flex gap-2 my-2">
+                            <button class="btn btn-primary-10 text-primary fs-6 fw-bold px-5 py-2">#大阪</button>
+                            <button class="btn btn-primary-10 text-primary fs-6 fw-bold px-5 py-2">#庶民美食</button>
+                            </div>
+                            <h3 class="fs-3 fw-bold mb-2 mt-7">深夜的章魚燒與便利商店啤酒</h3>
+                            <p class="fs-6 text-netural-80 mb-10">難波站邊的小巷，有開到凌晨的章魚燒老店。坐在路邊配一罐便利商店啤酒，看路人談天、喝醉、笑鬧，這種庶民感才是我最懷念的大阪味道。</p>
+                            <a class="text-primary fw-bold fs-5" href="#">查看文章<span class="material-icons-outlined align-bottom">arrow_forward</span></a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card rounded-16 p-5 w-100 border-0 mt-7">
+                        <div class="d-lg-flex">
+                        <img class="rounded-16" src="../assets/images/guide-3.png" alt="japan">
+                        <div class="card-body ms-lg-9">
+                            <div class="d-flex gap-2 my-2">
+                            <button class="btn btn-primary-10 text-primary fs-6 fw-bold px-5 py-2">#大阪</button>
+                            <button class="btn btn-primary-10 text-primary fs-6 fw-bold px-5 py-2">#靜態旅行</button>
+                            </div>
+                            <h3 class="fs-3 fw-bold mb-2 mt-7">一個人在中之島圖書館待一整天</h3>
+                            <p class="fs-6 text-netural-80 mb-10">陰天的中之島很安靜，我選擇在百年圖書館裡消磨一整天。閱讀、打盹、寫明信片，從高聳書架與拱形窗邊找到片刻的呼吸空間。不趕行程的日子，才最像我想要的旅途。</p>
+                            <a class="text-primary fw-bold fs-5" href="#">查看文章<span class="material-icons-outlined align-bottom">arrow_forward</span></a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card rounded-16 p-5 w-100 border-0 mt-7">
+                        <div class="d-lg-flex">
+                        <img class="rounded-16" src="../assets/images/guide-4.png" alt="japan">
+                        <div class="card-body ms-lg-9">
+                            <div class="d-flex gap-2 my-2">
+                            <button class="btn btn-primary-10 text-primary fs-6 fw-bold px-5 py-2">#大阪</button>
+                            <button class="btn btn-primary-10 text-primary fs-6 fw-bold px-5 py-2">#在地文化</button>
+                            </div>
+                            <h3 class="fs-3 fw-bold mb-2 mt-7">跟著在地人玩「新世界」</h3>
+                            <p class="fs-6 text-netural-80 mb-10">走進「新世界」，才發現大阪有多狂、有多生活。串炸店裡全是吆喝聲、立吞店排滿上班族，還有拍不完的霓虹與搞笑招牌。這一區又亂又熱鬧，但真實又迷人。</p>
+                            <a class="text-primary fw-bold fs-5" href="#">查看文章<span class="material-icons-outlined align-bottom">arrow_forward</span></a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>

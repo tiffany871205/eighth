@@ -60,37 +60,42 @@
             <span class="material-icons-outlined align-bottom">menu</span>
         </button>
 
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+        <div class="offcanvas offcanvas-end p-7" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header pb-5 border-bottom border-netural-40">
+                <div class="d-flex align-items-center mt-64">
+                    <img class="profile-img me-2" src="../assets/images/avatar-1.png" alt="Jessica">
+                    <div>
+                        <p>Jessica</p>
+                        <p>jessica.yen@gamil.com</p>
+                    </div>
+                </div>
                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <div class="offcanvas-body px-0 d-flex flex-column justify-content-between">
+                <ul class="navbar-nav flex-grow-1 pe-3">
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link py-4 text-neutral-80" href="#">
+                        <span class="material-icons-outlined align-bottom mr-2">article</span>
+                        訂單管理
+                    </a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link py-4 text-neutral-80" href="#">
+                        <span class="material-icons-outlined align-bottom mr-2">favorite_border</span>
+                        我的收藏
+                    </a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+                    <li class="nav-item">
+                    <a class="nav-link py-4 text-neutral-80" href="#">
+                        <span class="material-icons-outlined align-bottom mr-2">settings</span>
+                        帳號設定
+                    </a>
                     </li>
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                <a class="nav-link text-neutral-80" href="#">
+                    <span class="material-icons-outlined align-bottom mr-2">logout</span>
+                    登出
+                </a>
             </div>
         </div>
         <!-- 手機板漢堡選單end -->

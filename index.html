@@ -10,8 +10,8 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <script type="module" crossorigin src="/eighth/assets/index-aHSyTV8T.js"></script>
-  <link rel="stylesheet" crossorigin href="/eighth/assets/index-4UJh5jhF.css">
+  <script type="module" crossorigin src="/eighth/assets/index-BR79rsp8.js"></script>
+  <link rel="stylesheet" crossorigin href="/eighth/assets/index-Qa1TJ7Az.css">
 </head>
 
   <body>
@@ -72,42 +72,47 @@
             </span>
         </a>
         <!-- 購物車按鈕end -->
-        <!-- 手機板漢堡選單及內容(尚未製作) -->
+        <!-- 手機板漢堡選單及內容-->
         <button class="btn border-0 p-2 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="material-icons-outlined align-bottom">menu</span>
         </button>
 
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+        <div class="offcanvas offcanvas-end p-7" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header pb-5 border-bottom border-netural-40">
+                <div class="d-flex align-items-center mt-64">
+                    <img class="profile-img me-2" src="/eighth/assets/avatar-1-cp2HwrEX.png" alt="Jessica">
+                    <div>
+                        <p>Jessica</p>
+                        <p>jessica.yen@gamil.com</p>
+                    </div>
+                </div>
                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <div class="offcanvas-body px-0 d-flex flex-column justify-content-between">
+                <ul class="navbar-nav flex-grow-1 pe-3">
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link py-4 text-neutral-80" href="#">
+                        <span class="material-icons-outlined align-bottom mr-2">article</span>
+                        訂單管理
+                    </a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link py-4 text-neutral-80" href="#">
+                        <span class="material-icons-outlined align-bottom mr-2">favorite_border</span>
+                        我的收藏
+                    </a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+                    <li class="nav-item">
+                    <a class="nav-link py-4 text-neutral-80" href="#">
+                        <span class="material-icons-outlined align-bottom mr-2">settings</span>
+                        帳號設定
+                    </a>
                     </li>
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                <a class="nav-link text-neutral-80" href="#">
+                    <span class="material-icons-outlined align-bottom mr-2">logout</span>
+                    登出
+                </a>
             </div>
         </div>
         <!-- 手機板漢堡選單end -->
@@ -614,7 +619,27 @@
       </section>
     </main>
 
-    <footer class="footer">footer</footer>
+    <footer class="py-11 px-4 bg-black">
+    <div class="container d-lg-flex justify-content-between align-items-center">
+        <div>
+            <img src="data:image/png;base64,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" alt="logo">
+            <ul class="my-10 p-0 d-lg-flex gap-9 my-lg-0 mt-lg-9">
+                <li><a class="fs-5 text-neutral-0 mb-5" href="#">常見問題</a></li>
+                <li><a class="fs-5 text-neutral-0 mb-5" href="#">關於我們</a></li>
+                <li><a class="fs-5 text-neutral-0 mb-5" href="#">隱私權政策</a></li>
+                <li><a class="fs-5 text-neutral-0" href="#">使用者條款</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="d-flex align-items-center gap-5 mb-5 p-0 flex-lg-row-reverse">
+                <li><a class="line btn rounded-circle border-netural-0 border" href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAARCAYAAADQWvz5AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADvSURBVHgBpZQBDYMwEEWbKUACEpDAHCCBKRhTwCQgYRKYAnDQOegcFAd/d2lZb80IFF7yM9qVz+d6RakIABmpIQ0kg4D1czUpV0t4g9bfsIX2n0lO0khH/6TDPpOZYTapcZyajQYxUYjrEi5p4X9HUkXq4epZylQnClWKck1R+SavC8n4a0uqSI1YV5zUNniHbtED3mKcsdEYLTiTnvynmOcEVzFmk16MX1yju3hX42UR+kn2lY3WhWIzOLb9+psLriEN0jGIjwvclj4STDRWzhyn6+D6ZuncdSoVuAaUr1KqPSB0PqfM1F6w9v3xfACRkrCX932ICAAAAABJRU5ErkJggg==" alt="line"></a></li>
+                <li><a class="youtube btn rounded-circle border-netural-0 border" href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADFSURBVHgBrZThDYIwEIVfif+tG7CBbqIbqBs4ghvoCIygE8gGuIHdAJjgvNMijaQewX7JowVeXi7X5gw8RLTjZc2yrNx/tl7fuGBtWFdjTIEg7Eb/U30qo3QcM87cIh2rLNKjqSwlcKGY5P8e/UH8RmtK4MtZZ9WvGoYFSHAV82eYRrzvYyvkrWWdVD/LKR4JOrBq0nnMoFNjPI308I50tBJYIh3F60lphkMpWaaLpvf42qAfWaI5hldExlXr986/X7rx9QRavw7cjS35QwAAAABJRU5ErkJggg==" alt="youtube"></a></li>
+                <li><a class="facebook btn rounded-circle border-netural-0 border" href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAARCAYAAAAPFIbmAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB1SURBVHgB1ZLRCYAwDESj9N+O4CiOpBs4QjdwBUdwA3UDN2g3iBGknoXS/Pbg6FEelxZCBGJmK3Ziz5+cob92cZ/cdQZahgQ4xeE9IzTCiBWrWsgWss9BWTVPd4GZNE2XBgoxydQZfrcgpXp4tRCuygb5QOgG5MVECbUu2qQAAAAASUVORK5CYII=" alt="facebook"></a></li>
+            </ul>
+            <p class="fs-6 text-neutral-15">copyright © 2025 ZOBAA 旅遊網站 All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
   </body>

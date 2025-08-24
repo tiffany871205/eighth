@@ -23,3 +23,37 @@
   height: 232px;
   object-fit: cover;
 }
+
+.osaka-sm{
+  padding: 4px;
+}
+
+.row-s{
+  margin: -4px;
+}
+
+.osaka-md{
+  padding: 4px;
+  max-width: 568px;
+  height: 520px;
+}
+
+.osaka-xl{
+  padding: 0;
+  min-height: 520px;
+    img{
+      object-fit: cover;
+    }
+}
+
+.osaka-container{
+  max-width: 100%;
+  height: 520px;
+  overflow: hidden;
+}
+
+.check{
+  margin-top: 35%;
+  margin-right: 10px;
+}
+
